@@ -1,10 +1,14 @@
-//= require ./store
-//= require_tree ./models
-//= require_tree ./controllers
-//= require_tree ./views
-//= require_tree ./helpers
-//= require_tree ./templates
-//= require_tree ./routes
-//= require_self
+GithubScore = Ember.Application.create();
 
-//GithubScore.initialize();
+GithubScore.Store = DS.Store.extend({
+  revision: 11,
+  adapter: "DS.RESTAdapter"
+});
+
+GithubScore.Actor = DS.Model.extend({
+  login: DS.attr('string'),
+  name: DS.attr('string'),
+  gravatarId: DS.attr('string'),
+  location: DS.attr('string'),
+  blog: DS.attr('string')
+});

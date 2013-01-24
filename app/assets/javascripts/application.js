@@ -15,8 +15,5 @@
 //= require handlebars
 //= require ember-1.0.0-pre.4.js
 //= require ember-data-11.js
-//= require_self
 //= require github_score
 //= require_tree .
-
-GithubScore = Ember.Application.create();
