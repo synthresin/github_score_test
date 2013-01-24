@@ -1,8 +1,7 @@
 GithubScore = Ember.Application.create();
 
 GithubScore.Store = DS.Store.extend({
-  revision: 11,
-  adapter: "DS.RESTAdapter"
+  revision: 11
 });
 
 GithubScore.Actor = DS.Model.extend({
